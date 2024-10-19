@@ -1,7 +1,7 @@
 import { useState} from "react";
 
 
-const TodoForm = ({ addTodo }) => {
+const TodoForm = ( {addTodo} ) => {
 
     const [value, setValue] = useState ("");
     const [category, setCategory] = useState ("");
