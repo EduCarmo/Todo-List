@@ -3,6 +3,7 @@ import Todo from "./components/Todo"
 import "./App.css";
 import TodoForm from './components/TodoForm';
 import Search from './components/Search';
+import Filter from './components/Filter';
 
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
       search={search}
       setSearch={setSearch}
       />
+      <Filter/>
       <div className="todo-list">
         {todos
         .filter((todo) => 
