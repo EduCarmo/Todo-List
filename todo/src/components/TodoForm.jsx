@@ -1,6 +1,7 @@
 import { useState} from "react";
 
 
+// eslint-disable-next-line react/prop-types
 const TodoForm = ( {addTodo} ) => {
 
     const [value, setValue] = useState ("");
@@ -9,8 +10,7 @@ const TodoForm = ( {addTodo} ) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if(!value || !category) return;
-        //adicionar todo
-        //limpar os campos
+        
         addTodo(value, category)
         setValue("")
         setCategory("")

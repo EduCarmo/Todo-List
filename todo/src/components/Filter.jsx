@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line react/prop-types
 const Filter = ({filter, setFilter, setSort}) => {
   return (
     <div className="filter">
